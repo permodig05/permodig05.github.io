@@ -1,0 +1,44 @@
+:root{
+    --navbar-height: 92px; 
+    --main-color: #EBEAE4;
+    --seconary-color: #E9EBE4;
+}
+body{
+    font-family: 'Cinzel', serif;
+
+}
+
+header{
+    background-image: url(../img/index.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    height: var(--navbar-height);
+    background-color: transparent;
+    justify-content: center;
+    color: #fff;
+}
+#logo{
+    text-align: center;
+    justify-content: center;
+}
+h1.logo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    
+}
+.logo-linje{
+    color: var(--main-color) ;
+    border: solid 0.5px;
+}
+.nav-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 40px; 
+    font-size: 20px;
+    font-weight: 100px;
+     
+}
