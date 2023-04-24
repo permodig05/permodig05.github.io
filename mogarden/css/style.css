@@ -1,0 +1,93 @@
+body{
+    font-family: 'Cinzel', serif;
+    text-shadow: 4px 6px 9px rgba(0,0,0,0.75);
+}
+
+header{
+    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 32%, rgba(0,0,0,0.0) 100%) , url(../img/pexels-photo-235725.webp);
+    background-size: cover;
+    height: 100vh;
+    background-position: 0 50%;
+    
+}
+
+nav{
+    height: var(--navbar-height);
+    background-color: transparent;
+    justify-content: center;
+    color: whitesmoke;
+}
+#logo{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+h1.logo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.6rem;
+    
+}
+.logo-linje{
+    color: var(--main-color) ;
+    border: solid 0.0313rem;
+}
+.nav-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem; 
+    font-size: 1.75rem;
+    font-weight: 6.25rem;
+     
+}
+.nav-item{
+    border-style: solid;
+    border-color: transparent;
+    padding: 5px;
+    
+}
+.under-rubrik1 > h1{
+    text-align: center;
+    justify-content: center;
+}
+.hero-image{
+        flex: 1 1 40%;
+        height: 250px;
+        padding: 20px 30px;
+        font-family: 'Gentium Book Basic', serif;
+        background-size: cover;
+        background-position: center;
+        color: whitesmoke;
+        text-shadow: 3px 4px 5px rgb(0 0 0 / 75%);
+        position: relative;
+        overflow: hidden;
+    }
+.card-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px 0px;
+    }
+#bild1{
+    background-image: url(../img/IMG_0672.webp);
+}
+#bild2{
+    background-image: url(../img/pexels-photo-235725.webp);
+}
+#bild3{
+    background-image: url(../img/purple-bee-on-flower-126.webp);
+}
+#bild4{
+    background-image: url(../img/Sep21_02_1176415931.webp);
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}

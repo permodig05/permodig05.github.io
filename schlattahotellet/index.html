@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./css/reset.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script type="text/javascript" src="./js/bildspel.js"></script>
+        <script type="text/javascript" src="./js/copyright.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +18,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/06f0cc3f9a.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="currentSlide(1)">
         <header>
             <input type="checkbox" name="hamburger" id="hamburger">
             <label for="hamburger" class="hamburger-container">
@@ -34,8 +37,8 @@
                 <hr class="logo-linje">
                 <ul role="list" class="nav-list">
                     <li class="nav-item"><a href="#">På Schlätta</a></li>
-                    <li class="nav-item"><a href="#">Boka Rum</a></li>
-                    <li class="nav-item"><a href="#">Restaurang</a></li>
+                    <li class="nav-item"><a href="./html/bokning.html">Boka Rum</a></li>
+                    <li class="nav-item"><a href="./html/resturang.html">Restaurang</a></li>
                     <li class="nav-item"><a href="#">Tillställningar</a></li>
                     <li class="nav-item"><a href="#">Galleri</a></li>
                     <li class="nav-item"><a href="#">Om Oss</a></li>
@@ -45,14 +48,81 @@
                
             </nav>
         </header>
-        <main>
-        <div class="hero">
-            <h1></h1>
-            <h2></h2>
-        </main>
-        <footer>
 
-        </footer>
+
+        <main>
+            <div class="slideshow-container">
+
+           
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="./img/eddi-aguirre-ZAVHbpOn4Jk-unsplash.webp" style="width:100%" alt="foalie med gröna stolat palmer och vit svrt rutigt golv">
+                  <div class="textbild">Modern foalie som ger en avslappnad och inbjudande atmosfär, med noga utvalda färger och mycket växter för att försäkra oss om eran trivsel.</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="./img/alev-takil-lw3Lqe2K7xc-unsplash.webp" style="width:100%" alt="juice i cin glas macker och crouasunter">
+                  <div class="textbild">lyxig hotell frukost gjort från råvaror i närheten och tillagade utav proffs kockar</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="./img/drew-dau-bWijQI4v0dM-unsplash.webp" style="width:100%" alt="pool med trädäck runt, tjej på sidan av poolen">
+                  <div class="textbild">fina upvärmda pooler på hotellet med trä däck runt om för öka känslan av kvalitet och försäkra er om att ni har det finaste</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./img/eiliv-aceron-2LzqR50_NTw-unsplash.webp" style="width:100%" alt="frukost utomhus, runt träd på bordet ägg toast bacoon och skål">
+                    <div class="textbild">ni kan alltid unna er ett mål ute på någon av våra fabulösa balkonger eller varför inte äta på eran egen balkong på rummet?</div>
+                </div>
+              
+           
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+
+            <section class="newsletter">
+                <div class="newsletter-container">
+                    <h2 class="news">Prenumerera på vårt nyhetsbrev</h2>
+                    <form>
+                    <input type="email" name="email" placeholder="Ange din e-postadress">
+                    <button type="submit">Prenumerera</button>
+                    </form>
+                </div>
+                </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+              <div class="footer-left">
+                <p>Hitta till oss</p>
+                <p>Adress: 123 Gata, Stockholm</p>
+                <p>Postnummer: 123 45</p>
+                <p id="copyright">
+                    <script>document.write(getCopyright())</script>
+                </p>
+              </div>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram instagram ikon" ></i></a>
+                <a href="#"><i class="fa-brands fa-facebook facebook ikon"></i></a>
+              </div>
+              <div class="footer-right">
+                <p>Kontakta oss</p>
+                <p>Epost: <a href="mailto:info@example.com">info@example.com </a></p>
+                <p>Telefon: <a href="tel:0812345678">071-233 45 78</a></p>
+              </div>
+            </div>
+          </footer>
        
 
     </body>

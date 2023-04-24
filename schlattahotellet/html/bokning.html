@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>bookning</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/bokning.css">
+        <script type="text/javascript" src="../js/copyright.js"></script>
+        <script type="text/javascript" src="../js/bokningssida.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/06f0cc3f9a.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox" name="hamburger" id="hamburger">
+            <label for="hamburger" class="hamburger-container">
+                    <span class="hamburger-icons"></span>
+            </label>
+            <nav class="hamburger-overlay">
+               
+                    <div id="logo"> 
+                        <a href="../index.html">
+                            <h1 class="logo">Schlätta Hotellet</h1>  
+                        </a>
+                    </div>
+              
+                <hr class="logo-linje">
+                <ul role="list" class="nav-list">
+                    <li class="nav-item"><a href="#">På Schlätta</a></li>
+                    <li class="nav-item"><a href="../html/bokning.html">Boka Rum</a></li>
+                    <li class="nav-item"><a href="#">Restaurang</a></li>
+                    <li class="nav-item"><a href="#">Tillställningar</a></li>
+                    <li class="nav-item"><a href="#">Galleri</a></li>
+                    <li class="nav-item"><a href="#">Om Oss</a></li>
+                    
+                </ul>
+    
+               
+            </nav>
+       </header>
+    
+       <main>
+            <section id="rooms">
+                <h2>Våra Rum</h2>
+                <div class="room" id="room1"> 
+                    <a clas="bild-rum" href="../html/bild-rum.html"><img src="../img/spacejoy-vOa-PSimwg4-unsplash.webp" alt="Rum 1"></a>
+                    <h3>Rum 1</h3>
+                    <p>Enkelrum med en säng</p>
+                    <p>Pris per natt: <span id="room1-price"></span> 2000kr</p>
+                    <button onclick="selectRoom('room1')">Välj</button>
+                </div>
+                <div class="room" id="room2">
+                    <a clas="bild-rum" href="./bild-rum.html"><img src="../img/dada_design-k6CwSTSuOaw-unsplash.webp" alt="Rum 2"></a>
+                    <h3>Rum 2</h3>
+                    <p>Dubbelrum med en queen-size säng</p>
+                    <p>Pris per natt: <span id="room2-price"></span> 3000kr</p>
+                    <button onclick="selectRoom('room2')">Välj</button>
+                </div>
+                <div class="room" id="room3">
+                    <a clas="bild-rum" href="./bild-rum.html"><img src="../img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.webp" alt="Rum 3"></a>
+                    <h3>Rum 3</h3>
+                    <p>Svit med en king-size säng och separat vardagsrum</p>
+                    <p>Pris per natt: <span id="room3-price"></span> 4000kr</p>
+                    <button onclick="selectRoom('room3')">Välj</button>
+                </div>
+                <div class="room" id="room4">
+                    <a clas="bild-rum" href="./bild-rum.html"><img src="../img/sasha-kaunas-67-sOi7mVIk-unsplash.webp" alt="Rum 4"></a>
+                    <h3>Rum 4</h3>
+                    <p>Deluxe-rum med två queen-size sängar och balkong med havsutsikt</p>
+                    <p>Pris per natt: <span id="room4-price"></span> 5000kr</p>
+                    <button onclick="selectRoom('room4')">Välj</button>
+                </div>
+            </section>
+            
+            <section id="booking">
+                <h2>Bokning</h2>
+                <form>
+                    <label for="checkin">Incheckning:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+    
+                    <label for="checkout">Utcheckning:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+    
+                    <label for="room-type">Rumstyp:</label>
+                    <select id="room-type" name="room-type" onchange="updateRoomInfo()" required>
+                        <option value="">Välj rumstyp</option>
+                        <option value="room1">Rum 1</option>
+                        <option value="room2">Rum 2</option>
+                        <option value="room3">Rum 3</option>
+                        <option value="room4">Rum 4</option>
+				    </select>
+
+				<button type="submit">Boka</button>
+			</form>
+        
+			
+		</section>
+	</main>
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2 class="news">Prenumerera på vårt nyhetsbrev</h2>
+            <form>
+            <input type="email" name="email" placeholder="Ange din e-postadress">
+            <button type="submit">Prenumerera</button>
+            </form>
+        </div>
+        </section>
+</main>
+-->
+<footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>Hitta till oss</p>
+        <p>Adress: 123 Gata, Stockholm</p>
+        <p>Postnummer: 123 45</p>
+        <p id="copyright">
+            <script>document.write(getCopyright())</script>
+        </p>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram instagram ikon" ></i></a>
+        <a href="#"><i class="fa-brands fa-facebook facebook ikon"></i></a>
+      </div>
+      <div class="footer-right">
+        <p>Kontakta oss</p>
+        <p>Epost: <a href="mailto:info@example.com">info@example.com </a></p>
+        <p>Telefon: <a href="tel:0812345678">071-233 45 78</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

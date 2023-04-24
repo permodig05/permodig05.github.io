@@ -1,25 +1,13 @@
-:root{
-    --navbar-height: 11.8rem; 
-    --main-color: #EBEAE4;
-    --seconary-color: #E9EBE4;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-body{
-    font-family: 'Cinzel', serif;
-    text-shadow: 4px 6px 9px rgba(0,0,0,0.75);
-}
-
-header{
-    background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 32%, rgba(0,0,0,0.0) 100%), url(../img/will-funfun-bAK9wQghnHI-unsplash.jpg);
-    background-size: cover;
-    height: 100vh;
-    background-position: 0 50%;
-    
-}
-
 nav{
     height: var(--navbar-height);
     background-color: transparent;
     justify-content: center;
+    background-color: #222;
     color: whitesmoke;
 }
 #logo{
@@ -33,7 +21,7 @@ h1.logo{
     
 }
 .logo-linje{
-    color: var(--main-color) ;
+    color: whitesmoke ;
     border: solid 0.0313rem;
 }
 .nav-list{
@@ -51,32 +39,22 @@ h1.logo{
 .nav-item{
     border-style: solid;
     border-color: transparent;
+    
 }
 .hero{
     width: 100vw;
-    height: 37.5rem;
-
 }
+
 .nav-item:hover{
     border-style: solid;
-    border-color: black;
-    transition: 1s;
+    border-color: whitesmoke;
+    transition: all ease-in-out 0.3s;
 }
 
-nav:hover{
-    background-color: var(--seconary-color);
-    color: black;
-    transition: 1s ease-in-out;
-    opacity: 0.8;
-}
-nav:hover h1{
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.294);
+.nav-item:hover a{
+    filter: brightness(50%);
 }
 
-nav:hover hr{
-    color: black;
-    transition: 1s;
-}
 #hamburger{
     display:none;
 }
@@ -116,106 +94,97 @@ nav:hover hr{
     z-index: 999;
     display: none; /* VISIBLE ONLY WHEN MAXWIDTH 850PX*/
 }
-.newsletter {
-    background-color: #09224C;
-    color: white;
-    padding: 20px;
-  }
-  
-  .newsletter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
 
-  
-  
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+
+
+nav .cta:hover {
+    color: #F00;
 }
 
-.mySlides {
-  display: none;
+.hero {
+    margin-top: 2em;
+    max-width: 600px;
+    margin: 2em auto;
 }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.dots{
-    text-align:center
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.cta {
+    display: inline-block;
+    background-color: #F00;
+    color: #FFF;
+    margin: 5px -5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: left;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.cta:hover {
+    background-color: #FFF;
+    color: #F00;
 }
 
-.textbild {
-  color: whitesmoke;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.294);
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
+.about {
+    background-color: #EEE;
+    padding: 2em;
+    text-align: center;
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.menu {
+    padding: 2em;
+    text-align: center;
 }
 
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.menu h2 {
+    margin-top: 0;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.menu-item {
+    border: 1px solid #CCC;
+    padding: 1em;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.menu-item h3 {
+    margin-top: 0;
 }
 
-  
-  .news {
+.price {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.gallery {
+    background-color: #FFF;
+    padding: 2em;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-top: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+
+
+.news {
     margin-bottom: 20px;
   }
   
@@ -232,7 +201,7 @@ nav:hover hr{
     margin-right: 20px;
   }
   
-  button[type="submit"] {
+  .knapp[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
@@ -241,7 +210,7 @@ nav:hover hr{
     cursor: pointer;
   }
   
-  button[type="submit"]:hover {
+  .knapp[type="submit"]:hover {
     background-color: whitesmoke;
   }
 
@@ -280,3 +249,11 @@ footer {
   .social-icons a:last-child {
     margin-right: 0;
   }
+
+
+  .textbild {
+
+    text-shadow: initial;
+
+  }
+  
