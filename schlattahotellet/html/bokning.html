@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/bokning.css">
         <script type="text/javascript" src="../js/copyright.js"></script>
-        <script type="text/javascript" src="../js/bokningssida.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,12 +37,12 @@
               
                 <hr class="logo-linje">
                 <ul role="list" class="nav-list">
-                    <li class="nav-item"><a href="#">På Schlätta</a></li>
-                    <li class="nav-item"><a href="../html/bokning.html">Boka Rum</a></li>
-                    <li class="nav-item"><a href="#">Restaurang</a></li>
-                    <li class="nav-item"><a href="#">Tillställningar</a></li>
-                    <li class="nav-item"><a href="#">Galleri</a></li>
-                    <li class="nav-item"><a href="#">Om Oss</a></li>
+                    <li class="nav-item"><a href="./pa-schlatta.html">På Schlätta</a></li>
+                    <li class="nav-item active"><a href="../html/bokning.html">Boka Rum</a></li>
+                    <li class="nav-item"><a href="../html/resturang.html">Restaurang</a></li>
+                    <li class="nav-item"><a href="./tillstallningar.html">Tillställningar</a></li>
+                    <li class="nav-item"><a href="./galleri.html">Galleri</a></li>
+                    <li class="nav-item"><a href="./om-oss.html">Om Oss</a></li>
                     
                 </ul>
     
@@ -59,53 +58,56 @@
                     <h3>Rum 1</h3>
                     <p>Enkelrum med en säng</p>
                     <p>Pris per natt: <span id="room1-price"></span> 2000kr</p>
-                    <button onclick="selectRoom('room1')">Välj</button>
+                    <button class="bok-knapp">Välj</button>
                 </div>
                 <div class="room" id="room2">
                     <a clas="bild-rum" href="./bild-rum.html"><img src="../img/dada_design-k6CwSTSuOaw-unsplash.webp" alt="Rum 2"></a>
                     <h3>Rum 2</h3>
                     <p>Dubbelrum med en queen-size säng</p>
                     <p>Pris per natt: <span id="room2-price"></span> 3000kr</p>
-                    <button onclick="selectRoom('room2')">Välj</button>
+                    <button class="bok-knapp">Välj</button>
                 </div>
                 <div class="room" id="room3">
                     <a clas="bild-rum" href="./bild-rum.html"><img src="../img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.webp" alt="Rum 3"></a>
                     <h3>Rum 3</h3>
                     <p>Svit med en king-size säng och separat vardagsrum</p>
                     <p>Pris per natt: <span id="room3-price"></span> 4000kr</p>
-                    <button onclick="selectRoom('room3')">Välj</button>
+                    <button class="bok-knapp">Välj</button>
                 </div>
                 <div class="room" id="room4">
                     <a clas="bild-rum" href="./bild-rum.html"><img src="../img/sasha-kaunas-67-sOi7mVIk-unsplash.webp" alt="Rum 4"></a>
                     <h3>Rum 4</h3>
                     <p>Deluxe-rum med två queen-size sängar och balkong med havsutsikt</p>
                     <p>Pris per natt: <span id="room4-price"></span> 5000kr</p>
-                    <button onclick="selectRoom('room4')">Välj</button>
+                    <button class="bok-knapp">Välj</button>
                 </div>
             </section>
-            
+        
             <section id="booking">
                 <h2>Bokning</h2>
-                <form>
+                <form class="in-utcheckning">
+                    <div>
                     <label for="checkin">Incheckning:</label>
-                    <input type="date" id="checkin" name="checkin" required>
-    
+                    <input class="datum" type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div>
                     <label for="checkout">Utcheckning:</label>
-                    <input type="date" id="checkout" name="checkout" required>
-    
+                    <input class="datum" type="date" id="checkout" name="checkout" required>
+                    </div>
+                    <div>
                     <label for="room-type">Rumstyp:</label>
-                    <select id="room-type" name="room-type" onchange="updateRoomInfo()" required>
+                    <select id="room-type" name="room-type" required>
                         <option value="">Välj rumstyp</option>
-                        <option value="room1">Rum 1</option>
-                        <option value="room2">Rum 2</option>
-                        <option value="room3">Rum 3</option>
-                        <option value="room4">Rum 4</option>
+                        <option value="room1">standard</option>
+                        <option value="room2">dubbel rum</option>
+                        <option value="room3">svit</option>
+                        <option value="room4">presidential svit</option>
 				    </select>
-
-				<button type="submit">Boka</button>
+                    </div>
+                    <div>
+				<button class="bok-knapp" type="submit">Boka</button>
+                    </div>
 			</form>
-        
-			
 		</section>
 	</main>
     <section class="newsletter">
@@ -118,7 +120,6 @@
         </div>
         </section>
 </main>
--->
 <footer>
     <div class="footer-container">
       <div class="footer-left">
