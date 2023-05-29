@@ -25,9 +25,8 @@ nav{
     color: whitesmoke;
 }
 .rubriktext{
-  font-family: 'Cinzel', cursive;
   position: absolute;
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(1.5rem, 5vw, 5rem);
   color: whitesmoke;
   top: 50%;
   left: 50%;
