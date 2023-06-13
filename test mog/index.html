@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>mogarden</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="./js/bildspel.js"></script>
+        <script type="text/javascript" src="./js/copyright.js"></script>
+        <script src="https://kit.fontawesome.com/06f0cc3f9a.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body onload="currentSlide(1)">
+        <header>
+            <input type="checkbox" name="hamburger" id="hamburger">
+            <label for="hamburger" class="hamburger-container">
+                    <span class="hamburger-icons"></span>
+            </label>
+            <nav class="hamburger-overlay">
+               
+                    <div id="logo"> 
+                        <a href="./index.html">
+                            <h1 class="logo">Mogården</h1>  
+                        </a>
+                    </div>
+              
+                <hr class="logo-linje">
+                <ul role="list" class="nav-list">
+                    <li class="nav-item"><a href="./html/pa-schlatta.html">På Gården</a></li>
+                    <li class="nav-item"><a href="./html/bokning.html">Våra produkter</a></li>
+                    <li class="nav-item"><a href="./html/tillstallningar.html">Här finns vi</a></li>
+                    <li class="nav-item"><a href="./html/galleri.html">Galleri</a></li>
+                    <li class="nav-item"><a href="./html/om-oss.html">Om Oss</a></li>
+                    
+                </ul>
+
+        </header>
+        <main>
+            <div class="slideshow-container">
+
+           
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="./img/michael-bourgault-YvvHEQNgMcU-unsplash.jpg" style="width:100%" alt="foalie med gröna stolat palmer och vit svrt rutigt golv">
+                  <div class="textbild">1</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="./img/michael-bourgault-YvvHEQNgMcU-unsplash.jpg" style="width:100%" alt="juice i cin glas macker och crouasunter">
+                  <div class="textbild">2</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="./img/michael-bourgault-YvvHEQNgMcU-unsplash.jpg" style="width:100%" alt="pool med trädäck runt, tjej på sidan av poolen">
+                  <div class="textbild">3</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./img/michael-bourgault-YvvHEQNgMcU-unsplash.jpg" style="width:100%" alt="frukost utomhus, runt träd på bordet ägg toast bacoon och skål">
+                    <div class="textbild">4</div>
+                </div>
+              
+           
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+       
+              <footer>
+                <div class="footer-container">
+                  <div class="footer-left">
+                    <p>Hitta till oss</p>
+                    <p>Adress: 123 Gata, Stockholm</p>
+                    <p>Postnummer: 123 45</p>
+                    <p id="copyright">
+                        <script>document.write(getCopyright())</script>
+                    </p>
+                  </div>
+                  <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram instagram ikon" ></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook facebook ikon"></i></a>
+                  </div>
+                  <div class="footer-right">
+                    <p>Kontakta oss</p>
+                    <p>Epost: <a href="mailto:info@example.com">info@example.com </a></p>
+                    <p>Telefon: <a href="tel:0812345678">071-233 45 78</a></p>
+                  </div>
+                </div>
+              </footer>
+    </body>
+</html>
