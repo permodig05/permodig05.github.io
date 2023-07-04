@@ -302,7 +302,7 @@ transform:translateX(-50%)rotate(45deg);
   
   .social-icons {
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     order: 1;
     flex: 1 1 90%;
     justify-content: center;

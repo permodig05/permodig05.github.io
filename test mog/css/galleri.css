@@ -1,0 +1,34 @@
+
+header {
+    height: initial;
+    padding-bottom: 5rem;
+    background-position: 30% 30%;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      
+      .gallery-item {
+        flex-basis: calc(33.33% - 20px);
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      
+      @media (max-width: 600px) {
+        .gallery-item {
+          flex-basis: calc(50% - 20px);
+        }
+      }
+      

@@ -1,0 +1,84 @@
+header {
+    height: initial;
+    padding-bottom: 5rem;
+    background-position: 30% 30%;
+    }
+
+
+    h1 {
+        text-align: center;
+      }
+      
+      .section {
+        margin-bottom: 40px;
+      }
+      
+      .section h2 {
+        margin-bottom: 10px;
+      }
+      
+      .section img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8); /* Skuggningseffekt på bilder */
+        position: relative; /* Relativ position för att positionera text */
+      }
+      
+      .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .image-grid .image-item {
+        flex-basis: 33%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative; /* Relativ position för att positionera text */
+        display: flex;
+        align-items: center; /* Centrera innehållet vertikalt */
+        justify-content: center; /* Centrera innehållet horisontellt */
+      }
+      .har-finns-vi .image-grid .image-item {
+        flex-basis: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative; /* Relativ position för att positionera text */
+        display: flex;
+        align-items: center; /* Centrera innehållet vertikalt */
+        justify-content: center; /* Centrera innehållet horisontellt */
+      }
+
+      .image-grid .image-item img {
+        width: 500px; /* Anpassa bredden efter behov */
+        height: 350px; /* Anpassa höjden efter behov */
+        object-fit: cover; /* Behåll bildförhållanden och beskär om nödvändigt */
+        margin-bottom: 5px;
+      }
+      .har-finns-vi .image-grid .image-item img {
+        width: 650px; /* Anpassa bredden efter behov */
+        height: 500px; /* Anpassa höjden efter behov */
+        object-fit: cover; /* Behåll bildförhållanden och beskär om nödvändigt */
+        margin-bottom: 5px;
+      }
+
+      .image-grid .image-item p {
+        position: absolute; /* Absolut position för att överlagra text */
+        bottom: 175px;
+        left: 0;
+        right: 0;
+        padding: 5px 10px;
+        width: 80%; /* Justera bredden efter behov */
+        margin: 0 auto; /* Centrera texten horisontellt */
+      }
+      
+      
+     
+      /* Media query för mobilvisning */
+      @media (max-width: 800px) {
+        .section .image-item {
+          flex-basis: 100%; /* Full bredd för mobil */
+        }
+      }
