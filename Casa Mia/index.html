@@ -6,26 +6,48 @@
         <title></title>
         <meta name="description" content="Resturang sida">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Pär Modig, Linus Hägström">
+        <meta name="author" content="Pär Modig, Linus Häggström">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
-        <script type="text/javascript" href=""></script>
-        <script type="text/javascript" href=""></script>
+        <script type="text/javascript" src="./js/copyright.js"></script>
+        <script type="text/javascript" src=""></script>
+        <script src="https://kit.fontawesome.com/06f0cc3f9a.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <nav>
-
+                <div id="logo">
+                        <a href="./index.html">
+                            <img src="" alt="Casa Mia logo"/>
+                        </a>
+                </div>
+                <hr class="logo-linje">
+                <ul role="list" class="nav-list">
+                    <li class="nav-item"><a href="./html/meny.html">Meny</a></li>
+                    <li class="nav-item"><a href="./html/bar.html">Bar</a></li>
+                    <li class="nav-item"><a href="./html/galleri.html">Galleri</a></li>
+                    <li class="nav-item"><a href="./html/omoss.html">Om Oss</a></li>
+                    <li class="nav-item"><a href="./html/hittahit.html">Hitta hit</a></li>  
+                </ul>
             </nav>
         </header>
         <main>
-
+            <div class="bildfram">
+                <img class="framsak" src="./img/Resized_IMG-20220601-WA0041.webp" alt="1">
+            </div>
         </main>
         <footer>
-            <p id="copyright">
-                <script>document.write(getCopyright())</script>
-            </p>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <p><a href="./html/hittahit.html">Hitta till oss</a></p>
+                    <p id="copyright">
+                        <script>document.write(getCopyright())</script>
+                    </p>
+                </div>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/p/Casa-Mia-Restaurang-Pizzeria-100057502627157/"><i class="fa-brands fa-facebook facebook ikon"></i></a>
+                </div>
         </footer>
 
     </body>

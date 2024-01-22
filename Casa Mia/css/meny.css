@@ -1,0 +1,32 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:antiquewhite;
+}
+.menu {
+    background-color:#363636;
+    border: 1px solid #9d9d9d;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    padding: 2rem;
+    width: 18.75rem;
+}
+
+main h2 {
+    color:antiquewhite;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0.625rem;
+    text-align: center;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main li {
+    margin: 0.625rem;
+}
