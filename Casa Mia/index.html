@@ -11,31 +11,94 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
         <script type="text/javascript" src="./js/copyright.js"></script>
-        <script type="text/javascript" src=""></script>
+        <script type="text/javascript" src="./js/bildspel.js"></script>
         <script src="https://kit.fontawesome.com/06f0cc3f9a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="currentSlide(1)">
         <header>
-            <nav>
+            <input type="checkbox" name="hamburger" id="hamburger">
+                <label for="hamburger" class="hamburger-container">
+                    <span class="hamburger-icons"></span>
+                </label><input type="checkbox" name="hamburger" id="hamburger">
+                <label for="hamburger" class="hamburger-container">
+                    <span class="hamburger-icons"></span>
+                </label>
+
+            <nav class="hamburger-overlay">
                 <div id="logo">
                         <a href="./index.html">
-                            <img src="" alt="Casa Mia logo"/>
+                            <h1>Casa Mia</h1>
                         </a>
                 </div>
                 <hr class="logo-linje">
                 <ul role="list" class="nav-list">
                     <li class="nav-item"><a href="./html/meny.html">Meny</a></li>
                     <li class="nav-item"><a href="./html/bar.html">Bar</a></li>
-                    <li class="nav-item"><a href="./html/galleri.html">Galleri</a></li>
                     <li class="nav-item"><a href="./html/omoss.html">Om Oss</a></li>
                     <li class="nav-item"><a href="./html/hittahit.html">Hitta hit</a></li>  
                 </ul>
             </nav>
         </header>
         <main>
+            <h1 class="logo-t">Hjärtat av Nossebro</h1>
             <div class="bildfram">
                 <img class="framsak" src="./img/Resized_IMG-20220601-WA0041.webp" alt="1">
             </div>
+            <div class="slideshow-container">
+
+           
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="./img/Resized_20210613_124318.webp" style="width:100%" alt="foalie med gröna stolat palmer och vit svrt rutigt golv">
+                  <div class="textbild"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="./img/Resized_20210709_161327.webp" style="width:100%" alt="juice i cin glas macker och crouasunter">
+                  <div class="textbild"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="./img/Resized_20210722_121434.webp" style="width:100%" alt="pool med trädäck runt, tjej på sidan av poolen">
+                  <div class="textbild"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="./img/Resized_IMG-20220126-WA0027.webp" style="width:100%" alt="frukost utomhus, runt träd på bordet ägg toast bacoon och skål">
+                    <div class="textbild"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="./img/Resized_IMG-20220601-WA0041.webp" style="width:100%" alt="frukost utomhus, runt träd på bordet ägg toast bacoon och skål">
+                    <div class="textbild"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="./img/Resized_IMG-20220601-WA0053.webp" style="width:100%" alt="frukost utomhus, runt träd på bordet ägg toast bacoon och skål">
+                    <div class="textbild"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="./img/Resized_IMG-20220601-WA0055.webp" style="width:100%" alt="frukost utomhus, runt träd på bordet ägg toast bacoon och skål">
+                    <div class="textbild"></div>
+                </div>
+              
+           
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
         </main>
         <footer>
             <div class="footer-container">
@@ -47,6 +110,7 @@
                 </div>
                 <div class="social-icons">
                   <a href="https://www.facebook.com/p/Casa-Mia-Restaurang-Pizzeria-100057502627157/"><i class="fa-brands fa-facebook facebook ikon"></i></a>
+                  <p>Tel: 0512-51440</p>
                 </div>
         </footer>
 
