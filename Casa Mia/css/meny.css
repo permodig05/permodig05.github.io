@@ -14,3 +14,8 @@
     justify-content: center;
     color: antiquewhite;
 }
+@media screen and (max-width: 1050px){
+    .menu{
+        width: 90%;
+    }
+}
